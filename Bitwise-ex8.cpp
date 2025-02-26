@@ -1,13 +1,18 @@
 // Your code here
 #include <iostream>
+#include <bitset>
 using namespace std;
 
 int main(){
-    int i = 2;
-    switch (i) {
-        case 1:
-            cout << '1'; // prints "1",
-        case 2:
-            cout << '2'; // then prints "2"
-    }
+    bitset<8> b{0b01110010};
+        cout << b << " (initial value)\n";
+        cout << ~b << " (final value)\n";
+
+    //     for (; b.any(); b >>= 1) {
+    //         while (!b.test(0))
+    //             b >>= 1;
+    //         cout << b << '\n';
+    //     }
+    
+    // cout << b << " (final value)\n";
 }
